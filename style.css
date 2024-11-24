@@ -1,0 +1,255 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* Navbar Section Start */
+#navbar{
+    background-color: whiite;
+    /* display: flex; */
+}
+.navbar-data{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+}
+.nav-icons ul{
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.nav-icons ul li{
+list-style: none;
+}
+.nav-whatsapp span{
+display: flex;
+gap: 10px;
+justify-content: center;
+align-items: center;
+}
+.nav-whatsapp a{
+    text-decoration: none !important;
+    color: black !important;
+}
+  button {
+    padding: 5px 15px;
+    border: 2px solid var(--unnamed-color-e0645a);
+    background: #FFE4E2 0% 0% no-repeat padding-box;
+    border: 2px solid #E0645A;
+    border-radius: 38px !important;
+    opacity: 1;
+}
+/* Nvabar Section End */
+
+/* Banner Section Start */
+.hero-text h2{
+    font-size: 3rem;
+    color: white;
+}
+.hero-text p{
+    font-size: 0.9rem;
+    color: white;
+}
+.form-title{
+    color: #032153; 
+    padding: 0px 5px; 
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.banner-form{
+    padding-left: 230px !important;
+}
+form{
+    border: 1px solid white;
+    padding:40px;
+    background-color: white;
+    border-radius: 30px;
+    box-shadow: 0px 20px 20px #00000042;
+}
+@media (min-width: 568px) {
+    .hero-banner{
+    background-image: url("images/Group\ 401.png");
+    width: 100%;
+    height: 650px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    }
+    /* .hero-text{
+        padding: 0px 300px  0px 0px!important;
+
+    }
+    .banner-form{
+        padding: 50px 100px  !important;
+
+    } */
+  
+}
+@media (max-width: 567px) {
+    .hero-banner{
+    background-image: url("mobile-img/Mask\ Group\ 1@2x.png");
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 0px;
+    }
+    .hero-text{
+        padding: 50px 8px!important;
+        background-color: #0000ff82;
+
+    }
+    .banner-form{
+        padding: 0px !important;
+        margin-top: 400px;
+
+    }
+    .hero-data{
+        padding-top: 0px !important;
+        text-align: center;
+    }
+    
+}
+/* Banner Section End  */
+
+
+/* Our Services Section Start  */
+.service-heading span{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: blue;
+}
+
+.card-container{
+    padding: 50px 100px !important;
+
+}
+.card-item{
+    border: 1px solid #D9D9D9;
+  /* height: 400px;
+  width: 350px; */
+    padding: 0px 15px;
+    text-align: justify;
+}
+.card-text h2{
+    font-size: 1.3rem;
+}
+.card-text p{
+    font-size: 0.9rem;
+}
+/* Our Services Section End  */
+
+/* Testimonail Start */
+.bg-img-part{
+    background: url('images/pngwing.com\ \(21\).png'); 
+    width: 100%; 
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.checked {
+    color: orange;
+  }
+  .owl-dots {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .owl-dot {
+    width: 25px;
+    height: 8px;
+    background-color: #E0645A; /* Custom color for dots */
+    /* display: inline-block; */
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+  }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot{
+    background-color: grey !important;
+  }
+  .owl-carousel .owl-nav button.owl-next, .owl-carousel .owl-nav button.owl-prev, .owl-carousel button.owl-dot.active {
+    background: #E0645A !important; /* Active dot color */
+  }
+
+  .item {
+    background-color: #ffffff;
+    height: 300px;
+    box-shadow: 0px 3px 6px #00000029;
+    border: 1px solid #D9D9D9;
+    border-radius: 14px;
+    padding: 30px;
+    margin: 20px;
+    text-align: justify;
+  }
+  .card-name{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+/* Testimonial End  */
+
+/* Accordion  */
+.accordion-item:not(:first-of-type) {
+    border-top: 1;
+}
+
+.accordion-item {
+    background-color: #fff;
+    box-shadow: 0px 3px 6px #0000000A;
+    border: 1px solid #D9D9D9 !important;
+    border-radius: 14px;
+    margin-top: 41px !important;
+    padding: 10px !important;
+}
+.accordion-button:not(.collapsed) {
+    color: unset !important;
+    background-color: unset !important;
+    box-shadow: unset !important;
+}
+.accordion-button:focus {
+    z-index: 3;
+    border-color:unset !important;
+    outline: 0;
+    box-shadow:unset !important;
+}
+.accordion-item:first-of-type {
+    border-radius: 14px;
+}
+.accordion-item:last-of-type {
+    border-radius: 14px;
+}
+
+
+.accordion-button::after {
+    flex-shrink: 0;
+    width: 2rem;
+    height: 2rem;
+    margin-left: auto;
+    content: "";
+    background-image: url('images/Group\ 319.svg') !important;
+    background-repeat: no-repeat;
+    background-size: 2rem;
+    transition: transform .2s ease-in-out;
+}
+.accordion-body {
+    text-align: start;
+    padding: 0px 60px !important;
+}
+ /* Accordion End */
+
+ /* Book Consultation Start  */
+.footer-part{
+    background: url('images/Group\ 399.png'); 
+    width: 100%; 
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+ /* Book Consultation End  */
